@@ -1,0 +1,128 @@
+Day 1: Introduction to JavaScript - Variables and Data Types
+
+
+JavaScript Overview: JavaScript is a versatile programming language primarily used for web development. It allows you to create dynamic and interactive experiences on websites. Today, we'll start with the basics: variables and data types.
+
+1. Variables in JavaScript
+
+What is a Variable? A variable is a container used to store data values. Think of it as a labeled box where you can store and retrieve information.
+
+Declaring Variables: In JavaScript, you can declare a variable using var, let, or const.
+
+var: Older way of declaring variables. Its scope is either global or function-level.
+let: Block-scoped, meaning it's only available within the block it's defined.
+const: Also block-scoped, but its value cannot be reassigned after it's set.
+Examples:
+
+var name = "John"; // using var
+let age = 25;      // using let
+const country = "USA"; // using const
+
+name is a variable that stores the string "John".
+age is a variable that stores the number 25.
+country is a constant variable that stores the string "USA".
+
+
+2. Data Types in JavaScript
+
+JavaScript has different data types to hold different kinds of values. The most commonly used data types are:
+
+String
+Number
+Boolean
+Null
+Undefined
+Object
+Array (special kind of object)
+
+1. String: A string is a sequence of characters enclosed in single or double quotes.
+
+Example:
+
+let firstName = "Alice";
+let lastName = 'Smith';
+
+2. Number: Numbers in JavaScript can be integers or floating-point numbers.
+
+Example:
+
+let integerNumber = 30;
+let floatingNumber = 3.14;
+
+
+3. Boolean: A boolean represents a logical entity and can have two values: true or false.
+
+Example:
+
+let isJavaScriptFun = true;
+let isTired = false;
+
+
+4. Null: null is a special value that represents "nothing" or "empty".
+
+Example:
+
+let emptyValue = null;
+
+
+5. Undefined: A variable that has been declared but not yet assigned a value has the value undefined.
+
+Example:
+
+let someValue;
+console.log(someValue); // Output: undefined
+
+6. Object: Objects are complex data structures used to store collections of data and more complex entities.
+
+Example:
+
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30
+};
+7. Array: An array is a special type of object used to store multiple values in a single variable.
+
+Example:
+
+let colors = ["red", "green", "blue"];
+3. Basic Operations with Variables
+String Concatenation: You can combine strings using the + operator.
+
+Example:
+
+let fullName = firstName + " " + lastName;
+console.log(fullName); // Output: Alice Smith
+Arithmetic Operations: You can perform arithmetic operations on numbers.
+
+Example:
+
+let sum = 10 + 5;  // Addition
+let difference = 10 - 5;  // Subtraction
+let product = 10 * 5;  // Multiplication
+let quotient = 10 / 5;  // Division
+Boolean Operations: You can perform logical operations like AND, OR, and NOT on booleans.
+
+Example:
+
+let isAdult = age >= 18;  // true
+let canVote = isAdult && isJavaScriptFun;  // true
+
+4. Practice Exercise
+Task 1: Declare variables for your name, age, and favorite color. Store appropriate values in them.
+Task 2: Create a person object that contains your name, age, and favorite color as properties.
+Task 3: Print a greeting message using the variables you created. Example: "Hello, my name is Alice. I am 25 years old and my favorite color is blue."
+
+Example Solution:
+
+let myName = "Alice";
+let myAge = 25;
+let favoriteColor = "blue";
+
+let person = {
+    name: myName,
+    age: myAge,
+    color: favoriteColor
+};
+
+console.log("Hello, my name is " + person.name + ". I am " + person.age + " years old and my favorite color is " + person.color + ".");
